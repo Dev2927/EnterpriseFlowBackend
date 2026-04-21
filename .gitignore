@@ -1,0 +1,16 @@
+# .NET
+bin/
+obj/
+*.user
+appsettings.Development.json
+appsettings.Production.json
+
+# Node / React
+node_modules/
+dist/
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
