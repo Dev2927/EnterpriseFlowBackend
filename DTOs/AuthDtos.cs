@@ -2,8 +2,6 @@ using System.ComponentModel.DataAnnotations;
 
 namespace EnterpriseFlow.DTOs;
 
-// ── Requests ──────────────────────────────────────────────────
-
 public record RegisterRequest(
     [Required, EmailAddress] string Email,
     [Required, MinLength(8)] string Password,
@@ -25,8 +23,6 @@ public record ChangePasswordRequest(
     [Required] string CurrentPassword,
     [Required, MinLength(8)] string NewPassword
 );
-
-// ── Responses ─────────────────────────────────────────────────
 
 public record AuthResponse(
     string AccessToken,

@@ -14,7 +14,6 @@ public class AppDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder mb)
     {   
-        // ── Users ────────────────────────────────────────────
         mb.Entity<User>(e =>
         {
             e.ToTable("users");
